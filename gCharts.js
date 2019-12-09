@@ -309,3 +309,98 @@ class gCharts {
    }
 }
 
+let yue = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+let chartData = {
+   id: 'demo',
+   width: 600,
+   height: 300,
+   paddinglr: 10,
+   def:3,
+   strokeColor: '#70caff',
+   fillColor: '#70caff',
+   xAxis: {
+      data: yue
+   },
+   series: [
+      {
+         value: 3423,
+         time: '2019年1月',
+         fn: (value, time) => {
+            return [time, `${value}元`]
+         }
+      },
+      {
+         value: 323,
+         time: '2019年2月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 1423,
+         time: '2019年3月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 423,
+         time: '2019年4月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 923,
+         time: '2019年5月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 3110,
+         time: '2019年6月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 34,
+         time: '2019年7月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 1223,
+         time: '2019年8月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 4000,
+         time: '2019年9月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 2450,
+         time: '2019年10月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+      {
+         value: 500,
+         time: '2019年11月',
+         fn: (value, time) => {
+            return [value, time]
+         }
+      },
+   ]
+
+}
+let chart = new gCharts(chartData)
+console.log(chart)
